@@ -1,5 +1,10 @@
 # XamarinComicBookMainPageError
-This is an example of an error that happens when you use App.Current.MainPage
+This is an example of an error that happens when you use App.Current.MainPage inside 
+
+```
+authenticator.Completed(s, ea) =>
+                    {
+```
 
 Steps to reproduce:
 
