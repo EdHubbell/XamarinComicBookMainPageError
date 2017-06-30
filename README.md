@@ -6,6 +6,21 @@ authenticator.Completed(s, ea) =>
                     {
 ```
 
+**NOTE**: This is the workaround I'm using for now - It addresses this problem. Use it instead of a plain Application.Current.MainPage = new LoggedInPage(loggedIn);
+
+```
+Task.Run(async () =>
+ {
+     await Task.Delay(1000);
+     Device.BeginInvokeOnMainThread(() =>
+     {
+         Application.Current.MainPage = new LoggedInPage(loggedIn);
+     });
+ });
+```
+
+The 1000 is arbitrary; I found that 300 was too small.
+
 Steps to reproduce:
 
 Start app.
