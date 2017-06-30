@@ -14,8 +14,11 @@ None of the 3 buttons will work.
 
 Am I missing an invoke on the 
 
+```
 App.Current.MainPage = new LoggedInPage(loggedIn);
-I've tried a few things, but I can't seem to get it to go. Hate to refactor an app just because of this. 
+```
+
+I don't know. I've tried a few things, but I can't seem to get it to go. Hate to refactor an app just because of this. 
 
 Any help is appreciated.
 ~Ed
